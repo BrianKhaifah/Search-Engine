@@ -1,4 +1,4 @@
-export class Usser {
+export class User {
 
   constructor (
 
@@ -8,7 +8,7 @@ export class Usser {
     public followers: any,
     public following: any,
     public location: any
-    
+
   ) {
 
 
