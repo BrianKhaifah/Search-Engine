@@ -124,19 +124,23 @@
 
   <div class="col-md-12 row mt-5">
 
-    <div class="col-md-2 p-5">
+    <div class="col-md-4 p-5">
 
-      <div *ngIf='Users' class=" back ">
+      <div *ngIf='Users'>
         <img id="avatar" src="{{Users.avatar_url}}" alt="profile pic" height="250px" width="250px"
           style="border-radius: 100%;">
-        <p class="profile">Username: <strong class="user">{{ Users.login}}</strong></p>
-        <p class="profile">Followers: <strong class="user">{{Users.followers}}</strong></p>
-        <p class="profile">Following: <strong class="user">{{Users.followers}}</strong></p>
+          <div class="back mt-5" >
+
+            <p class="profile">Username: <strong class="user">{{ Users.login}}</strong></p>
+            <p class="profile">Followers: <strong class="user">{{Users.followers}}</strong></p>
+            <p class="profile">Following: <strong class="user">{{Users.followers}}</strong></p>
+          </div>
+
       </div>
 
     </div>
 
-    <div class="col-md-10  p-5">
+    <div class="col-md-8  p-5">
 
       <div *ngIf='Repos'>
         <div *ngFor='let repo of Repos' class="con mt-5">
