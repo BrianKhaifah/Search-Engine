@@ -124,9 +124,9 @@
 
   <div class="col-md-12 row mt-5">
 
-    <div class="col-md-3 p-5">
+    <div class="col-md-2 p-5">
 
-      <div *ngIf='Users' class=" ">
+      <div *ngIf='Users' class=" back ">
         <img id="avatar" src="{{Users.avatar_url}}" alt="profile pic" height="250px" width="250px"
           style="border-radius: 100%;">
         <p class="profile">Username: <strong class="user">{{ Users.login}}</strong></p>
@@ -136,10 +136,10 @@
 
     </div>
 
-    <div class="col-md-8  p-5">
+    <div class="col-md-10  p-5">
 
       <div *ngIf='Repos'>
-        <div *ngFor='let repo of Repos' class="con">
+        <div *ngFor='let repo of Repos' class="con mt-5">
           <h3> <a href="{{repo.html_url}}"><span class="name pt-5">{{repo.name}}</span></a></h3>
           <p> <span class="desscription pt-3">{{repo.description}} </span></p>
 
@@ -148,9 +148,7 @@
 
     </div>
 
-    <div class="col-md-1">
 
-    </div>
   </div>
 
 
