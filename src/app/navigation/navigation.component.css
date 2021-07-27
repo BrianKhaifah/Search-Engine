@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,500&display=swap');
 .image{
   background: url("https://bit.ly/3y5PFY1")no-repeat center center;
   background-color: black;
@@ -13,32 +13,38 @@
   padding-top: 15%;
 }
 
-.container{
+.con{
+  padding: 30px;
+  padding-top: 30px;
+  border-radius: 20px;
   height: auto;
   width: 100%;
-  background: url("https://bit.ly/3i2Y2y5")no-repeat center center;
+  background: url("https://bit.ly/3f0cKnA")no-repeat center center;
   background-color: black;
   background-size: 100% 100%;
 
 
 }
-#profile{
+.profile{
+
+
+  font-family: 'Playfair Display', serif;
 
 }
 
-#user{
+.user{
   font-family: 'Playfair Display', serif;
 
 
 }
 
-#name{
+.name{
   color: wheat;
   font-size: 30px;
   font-weight: 900;
   font-family: 'Lobster', cursive;
 }
-#desscription{
+.desscription{
   color: whitesmoke;
   font-size: 20px;
 }

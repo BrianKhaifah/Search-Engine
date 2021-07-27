@@ -118,36 +118,37 @@
 </div>
 
 </div>
+<br> <br>
 
-<div class="container">
+<div class="container ">
 
-  <div class="col-md-12 row">
+  <div class="col-md-12 row mt-5">
 
-    <div class="col-md-3">
+    <div class="col-md-3 p-5">
 
-      <div *ngIf='Users' id="container">
+      <div *ngIf='Users' class=" ">
         <img id="avatar" src="{{Users.avatar_url}}" alt="profile pic" height="250px" width="250px"
           style="border-radius: 100%;">
-        <p id="profile">Username: <strong id="user">{{Users.login}}</strong></p>
-        <p id="profile">Followers: <strong id="user">{{Users.followers}}</strong></p>
-        <p id="profile">Following: <strong id="user">{{Users.followers}}</strong></p>
+        <p class="profile">Username: <strong class="user">{{ Users.login}}</strong></p>
+        <p class="profile">Followers: <strong class="user">{{Users.followers}}</strong></p>
+        <p class="profile">Following: <strong class="user">{{Users.followers}}</strong></p>
       </div>
 
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-8  p-5">
 
       <div *ngIf='Repos'>
-        <div *ngFor='let repo of Repos'>
-          <h3> <a href="{{repo.html_url}}"><span id="name mt-3">{{repo.name}}</span></a></h3>
-          <p> <span id="desscription mt-3">{{repo.description}} </span></p>
+        <div *ngFor='let repo of Repos' class="con">
+          <h3> <a href="{{repo.html_url}}"><span class="name pt-5">{{repo.name}}</span></a></h3>
+          <p> <span class="desscription pt-3">{{repo.description}} </span></p>
 
         </div>
       </div>
 
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-1">
 
     </div>
   </div>
