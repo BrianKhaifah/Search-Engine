@@ -15,7 +15,6 @@
 
 
 .con{
-  /* margin-left: 3%; */
   padding: 30px;
   padding-top: 30px;
   border-radius: 20px;
@@ -28,13 +27,14 @@
 
 }
 .profile{
-
-  font-size: 20px;
+  color: black;
+  font-size: 40px;
   font-family: 'Playfair Display', serif;
 
 }
 
 .user{
+  font-size: 30px;
   font-family: 'Playfair Display', serif;
 
 
