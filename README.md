@@ -1,27 +1,26 @@
-# Quotes
+# Repositories Search Engine
 #### By **Brian Khaifah**
 
 ## Description
-- An application that enables users to add quotes,delete quotes.You can also be able to see already existing and there author and can upvote and downvote quotes.
+This is a website where users can enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories
 
 ## Behaviour Driven Development(BDD)
 
 | Input                        | Ouput                                                                                            |
 |--------------------------    |----------------------------------------------------------------------------------------------    |
-| User clicks Post  Quote     | Quote form displays with input fields for Author, Publisher                  |
-| User Clicks Delete           | The quote is purged from view             |
-| User clicks Upvote        |   upvote is incremented value by   1 on each click      |
-| User clicks Downvote     | downvote is decremented value by 1 on each click     |
+| User Types User-name     | Repositories appear if the correct username is entered                 |
+|           |            
 
 ## Setup/Installation requirements
 
-- Clone  or download and unzip the repository from github, [https://github.com/BrianKhaifah/Quote-Code..git](https://github.com/BrianKhaifah/Quote-Code..git).
+- Clone  or download and unzip the repository from github, [https://github.com/BrianKhaifah/Search-Engine.git](https://github.com/BrianKhaifah/Search-Engine.git).
+
 - If you have git Use this command `git clone *` to clone the project.
 - Run ng serve from your terminal
 
 ## Live Demo
 To view the page click on the link below
-* [https://briankhaifah.github.io/Quote-Code./](*)
+* [https://github.com/BrianKhaifah/Search-Engine.git](*)
 
 ## Technologies Used
 - Angular CLI
