@@ -8,3 +8,8 @@
   padding-left: 35%;
   padding-top: 15%;
 }
+
+.container{
+  height: auto;
+  width: 100%;
+}
