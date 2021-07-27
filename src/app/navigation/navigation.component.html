@@ -128,9 +128,9 @@
       <div *ngIf='Users' id="container">
         <img id="avatar" src="{{Users.avatar_url}}" alt="profile pic" height="250px" width="250px"
           style="border-radius: 100%;">
-        <p>Username: <strong>{{Users.login}}</strong></p>
-        <p>Followers: <strong>{{Users.followers}}</strong></p>
-        <p>Following: <strong>{{Users.followers}}</strong></p>
+        <p id="profile">Username: <strong id="user">{{Users.login}}</strong></p>
+        <p id="profile">Followers: <strong id="user">{{Users.followers}}</strong></p>
+        <p id="profile">Following: <strong id="user">{{Users.followers}}</strong></p>
       </div>
 
     </div>
