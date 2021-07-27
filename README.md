@@ -20,7 +20,7 @@ This is a website where users can enter a GitHub username into a form, submit it
 
 ## Live Demo
 To view the page click on the link below
-* [https://github.com/BrianKhaifah/Search-Engine.git](*)
+* [https://briankhaifah.github.io/Search-Engine/](*)
 
 ## Technologies Used
 - Angular CLI
