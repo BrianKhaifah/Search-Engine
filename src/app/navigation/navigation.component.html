@@ -139,8 +139,8 @@
 
       <div *ngIf='Repos'>
         <div *ngFor='let repo of Repos'>
-          <h3> <a href="{{repo.html_url}}">{{repo.name}}</a></h3>
-          <p> {{repo.description}} </p>
+          <h3> <a href="{{repo.html_url}}"><span id="name">{{repo.name}}</span></a></h3>
+          <p> <span id="desscription">{{repo.description}} </span></p>
 
         </div>
       </div>
