@@ -10,7 +10,7 @@ import { UserService } from '../user.service';
 export class ProfileComponent implements OnInit {
 
   Users:User
-  Repo : Repo [] = []
+  Repos : Repo [] = []
 
   constructor( public usserHttpService:UserService) { }
 
@@ -32,7 +32,7 @@ export class ProfileComponent implements OnInit {
 
           ( success ) => {
 
-            this.Repo = this.usserHttpService.Repo
+            this.Repos = this.usserHttpService.Repos
           } )
   }
 

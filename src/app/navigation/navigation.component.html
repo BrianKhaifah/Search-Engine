@@ -1,1 +1,158 @@
-<p>navigation works!</p>
+<div class="container-fluid image ">
+
+  <!-- logo -->
+
+  <div class="row p-5">
+
+    <div class="col-md-4">
+
+      <div class="row logo">
+
+        <div class="col-md-4">
+
+          <div class="logo">
+
+            <img src="https://bit.ly/2UO1LH4" alt="" style="height: 100px; border-radius: 100px;">
+
+          </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+        </div>
+
+        <div class="col-md-4">
+
+       </div>
+
+      </div>
+
+    </div>
+
+    <!-- icon -->
+
+    <div class="col-md-4 icon row mt-3">
+
+      <div class="col-md-4">
+
+        <a href="">Home</a>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <a href="">About Us</a>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <a href="">FAQ</a>
+
+      </div>
+
+    </div>
+
+    <!-- Sign-up/Log-in -->
+
+    <div class="col-md-4 search">
+
+      <div class="row">
+
+        <div class="col-md-3">
+
+        </div>
+
+        <div class="col-md-3">
+
+        </div>
+
+        <div class="col-md-3">
+
+          <div class="button">
+
+            <button type="button" class="btn btn-success"> Log-In </button>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+          <div class="button">
+
+            <button type="button" class="btn btn-success"> Sign-UP </button>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+<!-- search-Body -->
+
+<div class=" text-center form">
+
+
+
+    <div class="md-form" style="width: 50%;">
+
+
+
+      <div>
+
+<app-search (emitSearch)="searchGit($event)"></app-search>
+
+    </div>
+
+
+</div>
+
+</div>
+
+<div class="container">
+
+  <div class="col-md-12 row">
+
+    <div class="col-md-3">
+
+      <div *ngIf='Users'>
+        <img id="avatar" src="{{Users.avatar_url}}" alt="profile pic" height="250px" width="250px"
+          style="border-radius: 100%;">
+        <p>Username: <strong>{{Users.login}}</strong></p>
+        <p>Followers: <strong>{{Users.followers}}</strong></p>
+        <p>Following: <strong>{{Users.followers}}</strong></p>
+      </div>
+
+    </div>
+
+    <div class="col-md-6">
+
+      <div *ngIf='Repos'>
+        <div *ngFor='let repo of Repos'>
+          <h3> <a href="{{repo.html_url}}">{{repo.name}}</a></h3>
+          <p> {{repo.description}} </p>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+    </div>
+  </div>
+
+
+</div>
+
+

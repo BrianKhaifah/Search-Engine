@@ -11,20 +11,20 @@ import { Repo } from './repo'
 export class UserService {
 
   Users:User
-  Repo : Repo [] = []
+  Repos : Repo [] = []
 
-  constructor( private http:HttpClient ) {
+  constructor( private http:HttpClient ) {}
 
-    searchGits ( searchTerm: String)
+  searchGits ( searchTerm: string) {
 
     interface userInterface {
 
-      public name: string,
-      public login: string,
-      public avator_url: any,
-      public followers: any,
-      public following: any,
-      public location: any
+       name: string,
+       login: string,
+       avatar_url: any,
+       followers: any,
+       following: any,
+       location: any
 
     }
 
@@ -34,7 +34,7 @@ export class UserService {
 
       this.http.get < userInterface > ( urlUser ).toPromise ().then(
 
-        (results) => {
+        (result) => {
 
           this.Users = result
 
@@ -54,9 +54,7 @@ export class UserService {
     })
 
     return promise
-
   }
-
   searchRepos ( searchTerm : string ) {
 
   interface repoInterface {
@@ -70,17 +68,17 @@ export class UserService {
 
   let urlUser = "Https://api.github.com/users/" +searchTerm + "/repos"
 
-  let promise = new Promise ( ( reolve , reject ) => {
+  let promise = new Promise ( ( resolve , reject ) => {
 
     this.http.get < repoInterface [] > ( urlUser ).toPromise ().then (
 
       ( results ) => {
 
-        this.Repo = [] ;
+        this.Repos = [] ;
 
-        for ( let i=0 ; i < results.lenght; i ++ ) {
-          let repo = new Repo ( results [ i ].name,results [ i ], description , results [ i ].html_url, results [ i ].create)
-          this.repo.push ( repo ) ;
+        for ( let i=0 ; i < results.length; i ++ ) {
+          let repo = new Repo ( results [ i ].name,results [ i ].description , results [ i ].html_url, results [ i ].created_at)
+          this.Repos.push ( repo ) ;
         }
 
         console.log( results )
