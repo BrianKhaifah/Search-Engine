@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&display=swap');
 
 .image{
   background: url("https://bit.ly/3y5PFY1")no-repeat center center;
@@ -19,6 +19,15 @@
   background: url("https://bit.ly/3i2Y2y5")no-repeat center center;
   background-color: black;
   background-size: 100% 100%;
+
+
+}
+#profile{
+
+}
+
+#user{
+  font-family: 'Playfair Display', serif;
 
 
 }
